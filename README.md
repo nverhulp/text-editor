@@ -16,11 +16,6 @@ To build this text editor, you will start with an existing application and imple
 
 ## Deployed Page
 
-<img src = "./assets/images/deployed-page1.png">
-<img src = "./assets/images/deployed-page2.png">
-<img src = "./assets/images/deployed-page3.png">
-<img src = "./assets/images/deployed-page4.png">
-
 ## Acceptance Criteria
 
 GIVEN a text editor web application
