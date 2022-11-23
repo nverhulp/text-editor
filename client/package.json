@@ -1,5 +1,8 @@
 {
   "name": "client",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
