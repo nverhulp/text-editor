@@ -16,6 +16,8 @@ To build this text editor, you will start with an existing application and imple
 
 ## Deployed Page
 
+<img src="./assets/deployed-page.png">
+
 ## Acceptance Criteria
 
 GIVEN a text editor web application
@@ -44,10 +46,9 @@ THEN I should have my static assets precached upon loading along with subsequent
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 
-## Comments
-
 ## URL of Deployed Application
 
 ## Credits
 
 1. Starter code from [GitHub](https://github.com/coding-boot-camp/cautious-meme)
+2. Heroku guidance from [The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide)
