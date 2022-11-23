@@ -48,6 +48,8 @@ THEN I should have proper build scripts for a webpack application
 
 ## URL of Deployed Application
 
+[URL of Application](https://texteditor-nicolev.herokuapp.com/)
+
 ## Credits
 
 1. Starter code from [GitHub](https://github.com/coding-boot-camp/cautious-meme)
