@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 export const putDb = async (content) => {
-  console.log('Post to the database');
+  console.log('PUT request to update the jateDB');
   // CONNECTION TO DATABASE AND VERSION WE WANT
   const jateDb = await openDB('jate', 1);
   // NEW TRANSACTION
@@ -21,26 +21,26 @@ export const putDb = async (content) => {
   // OPEN OBJECT STORE
   const objectStore = tx.objectStore('jate');
   // GRAB ALL CONTENT IN DB
-  const req = objectStore.getAll();
+  const request = objectStore.put({ id: 1, value: content });
   // CONFIRM DATA WAS FETCHED
-  const res = await req;
-  console.log('Data saved to the jateDB', res);
+  const result = await request;
+  console.log('Data saved to the jateDB', result);
 };
 
 export const getDb = async () => {
-  console.log('Getting data from the jateDB');
+  console.log('GET request for data from the jateDB');
   // CONNECTION TO DATABASE AND VERSION WE WANT
   const jateDb = await openDB('jate', 1);
   // NEW TRANSACTION
-  const tx = jateDb.transaction('jate', 'readwrite');
+  const tx = jateDb.transaction('jate', 'readonly');
   // OPEN OBJECT STORE
-  const objStore = tx.objectStore('jate');
+  const objectStore = tx.objectStore('jate');
   // GRAB ALL CONTENT IN DB
-  const req = objStore.getAll();
+  const request = objectStore.getAll();
   // CONFIRM DATA WAS FETCHED
-  const res = await req;
-  console.log('Data saved to the jateDB', res);
-  return res;
+  const result = await request;
+  console.log('Data saved to the jateDB', result);
+  return result;
 };
 
 initdb();
