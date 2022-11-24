@@ -10,9 +10,8 @@ To build this text editor, you will start with an existing application and imple
 
 1. [Deployed Page](#deployed-page)
 2. [Acceptance Criteria](#acceptance-criteria)
-3. [Comments](#comments)
-4. [URL of Deployed Application](#url-of-deployed-application)
-5. [Credits](#credits)
+3. [URL of Deployed Application](#url-of-deployed-application)
+4. [Credits](#credits)
 
 ## Deployed Page
 
